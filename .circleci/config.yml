@@ -38,14 +38,14 @@ jobs:
 
             echo " ------- login in to hub--------"
 
-            docker login -u newthingade -p $DOCKERPASS
+            docker login -u otengcode -p $DOCKERPASS
 
             echo "-------------- Pushing images to dockerhub-------"
 
-            docker push newthingade/udagram-api-feed:v3
-            docker push newthingade/udagram-api-user:v3
-            docker push newthingade/udagram-frontend:v3
-            docker push newthingade/udagram-reverseproxy:v3
+            docker push otengcode/udagram-api-feed:v1
+            docker push otengcode/udagram-api-user:v1
+            docker push otengcode/udagram-frontend:v1
+            docker push otengcode/udagram-reverseproxy:v1
 
 workflows:
   default:
